@@ -7,7 +7,7 @@ public class MinerMoveState : FsmState<MinerBehaviour>
 {
     [SerializeField, Range(0f, 20f)] private float MoveSpeed = 5f;
     [SerializeField] private float reachDistance = 0.5f;
-    //[SerializeField] private List<MineralVein> allVeins = new List<MineralVein>();
+    
     [SerializeField] private GameObject home;
     public Vector3 currentTargetPosition;
     private PathFinderAgent agent;

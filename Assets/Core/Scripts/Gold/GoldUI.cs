@@ -17,7 +17,7 @@ public class GoldUI : MonoBehaviour
 
     private void Start()
     {
-        // Initialize display with current value
+        
         UpdateGoldText(GoldManager.TotalGold);
     }
 

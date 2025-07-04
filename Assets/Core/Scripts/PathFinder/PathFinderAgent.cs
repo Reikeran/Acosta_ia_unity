@@ -43,11 +43,11 @@ public class PathFinderAgent : MonoBehaviour
     {
         if (Destination == null || HasReachedDestination || targetNode == null)
             return;
-
+        Debug.Log(targetNode.Position);
         Vector3 targetPosition = targetNode.Position;
         Vector3 diff = targetPosition - transform.position;
 
-        // Protección adicional por si diff es cero
+        
         if (diff.sqrMagnitude < 0.0001f)
         {
             if (currentPath != null && currentPath.Count > 0)
